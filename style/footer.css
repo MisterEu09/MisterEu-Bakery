@@ -1,0 +1,36 @@
+
+/*Footer sessions*/
+
+
+footer{
+    background-color: var(--dark-color);
+    padding: 40px 0;
+    text-align: center;
+    margin-top:40px;
+    color: var(--white-color);
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+.redes a{
+    display: flex;
+    background-color: var(--light-pink-color);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: var(--secundary-color);
+}
+.policy-text, .policy-link, .separator{
+    text-decoration: none;
+    color: var(--white-color);
+    padding-right: 3px;
+}

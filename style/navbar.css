@@ -1,0 +1,46 @@
+
+/*Navbar styling*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--secundary-color);
+
+}
+.img-logo{
+    max-width: 100px;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar .logo-text{
+    color: var(--white-color);
+    font-size: var(--font-size-x1);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+    padding: 10px 18px;
+    font-size: var(--font-size-m);
+    transition: 0.3s ease;
+    display: inline-block; /* ou display: block; */
+        /* ... outros estilos ... */
+        box-sizing: border-box;
+}
+
+
+.navbar .nav-menu .nav-link:hover {
+    border-top: 2px solid var(--azul-color); /* Apenas borda superior para teste */
+    border-bottom: 2px solid var(--azul-color); /* Apenas borda inferior para teste */
+    color: var(--azul-color);
+}
