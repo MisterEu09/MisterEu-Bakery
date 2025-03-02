@@ -23,8 +23,12 @@
     
 
 }
-#home{flex-direction: column;
-    justify-content: center;     width:60rem;}
+
+@media screen and (min-width: 426px) {
+
+    #home {
+        flex-direction: column;
+    justify-content: center;     width:60rem;}}
 .hero-content p{
     margin-top: 8px;
     max-width: 70%;

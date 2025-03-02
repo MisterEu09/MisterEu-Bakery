@@ -57,6 +57,8 @@ breakpoints:{
         slidesPerView:3
     }
 }
+
+
 });
 
 

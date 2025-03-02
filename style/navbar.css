@@ -2,15 +2,16 @@
 /*Navbar styling*/
 header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 5;
     background: var(--secundary-color);
-
+    height: 140px;
 }
+@media screen and (min-width: 426px) {
 .img-logo{
     max-width: 100px;
 }
-
+}
 header .navbar{
     display: flex;
     align-items: center;

@@ -1,4 +1,8 @@
-
+@media screen and (max-width: 426px) {
+    .about-section .about-details {
+        max-width: 80%;
+    
+    }.about-section .about-details p{font-size: 1rem;}}
 /*About Us Section*/
 
 .about-section{
@@ -20,23 +24,27 @@
 .about-section .about-details .section-title{
     padding: 0;
 }
-.about-section .about-details{
-    max-width: 50%;
-}
-.about-section .about-details .text{
+
+@media screen and (min-width:768px){
+    .about-section .about-details{
+        max-width: 50%;
+    }
+    .about-section .about-details .text{
 
     line-height: 30px;
     margin: 50px 0 30px;
     text-align: center;
     font-size: var(--font-size-m); 
 }
+}
+
 .about-section .social-link-list{
     display: flex;
     gap:25px;
     justify-content: center;
 }
 .about-section .social-link-list .social-link{
-    color: var(--primary-color);
+    color: var(--secundary-color);
     font-size: var(--font-size-l);
     transition: 0.2s ease ;
 }
