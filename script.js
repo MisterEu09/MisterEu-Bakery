@@ -1,19 +1,13 @@
 
-const menuButtons = document.querySelectorAll('.navbar :where(#menu-close-button, #menu-open-button)');
+const menuButtons = document.querySelectorAll('.navbar [id^="menu-"]');
 
-    function handleResize() {
-      if (window.innerWidth > 900) {
-        menuButtons.forEach(button => button.style.display = 'none');
-      } else {
-        menuButtons.forEach(button => button.style.display = 'block');
-      }
-    }
-    
-    // Chama a função no carregamento da página
-    handleResize();
-    
-    // Adiciona um listener para o evento de redimensionamento da janela
-    window.addEventListener('resize', handleResize);
+function handleResize() {
+  const displayStyle = window.innerWidth > 900 ? 'none' : 'block';
+  menuButtons.forEach(button => button.style.display = displayStyle);
+}
+
+handleResize();
+window.addEventListener('resize', handleResize);
 
     const menuOpenButton = document.querySelector("#menu-open-button");
     const menuCloseButton = document.querySelector("#menu-close-button");
